@@ -222,7 +222,7 @@ function App() {
           <div className="counter-box">
             <h3>We've been creating memories for</h3>
             <div className="days-number">
-              {Math.floor((new Date() - new Date('2023-08-12')) / (1000 * 60 * 60 * 24))}
+              {Math.floor((new Date() - new Date('2020-08-16')) / (1000 * 60 * 60 * 24))}
             </div>
             <p>beautiful days ❤️</p>
           </div>
@@ -242,3 +242,4 @@ function App() {
 
 
 export default App;
+
