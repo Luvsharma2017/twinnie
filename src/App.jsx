@@ -234,7 +234,7 @@ function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <p>Made with ❤️ and lots of memories</p>
+        <p>Made for Female Twinnie with ❤️ and lots of memories</p>
       </footer>
     </div>
   );
@@ -242,4 +242,5 @@ function App() {
 
 
 export default App;
+
 
