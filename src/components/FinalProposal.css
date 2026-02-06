@@ -1,0 +1,255 @@
+.final-proposal {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #434343 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-proposal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 107, 157, 0.2), transparent 70%);
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.proposal-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+}
+
+.proposal-text {
+  margin-bottom: 60px;
+}
+
+.typed-text {
+  color: white;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 1.6;
+  font-style: italic;
+  display: inline-block;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: var(--primary-pink);
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.proposal-question {
+  animation: fadeInUp 1s ease-out;
+}
+
+.big-question {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-family: 'Caveat', cursive;
+  color: var(--primary-pink);
+  margin-bottom: 60px;
+  text-shadow: 0 0 30px rgba(255, 107, 157, 0.8);
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  10%, 30% { transform: scale(1.05); }
+  20%, 40% { transform: scale(1); }
+}
+
+.button-container {
+  position: relative;
+  min-height: 200px;
+  margin: 60px 0;
+}
+
+.yes-btn {
+  background: linear-gradient(135deg, #ff6b9d, #c44569);
+  color: white;
+  border: none;
+  padding: 25px 60px;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px rgba(255, 107, 157, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+  animation: pulseGrow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGrow {
+  0%, 100% { transform: scale(1); box-shadow: 0 10px 40px rgba(255, 107, 157, 0.5); }
+  50% { transform: scale(1.1); box-shadow: 0 15px 60px rgba(255, 107, 157, 0.8); }
+}
+
+.yes-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 15px 60px rgba(255, 107, 157, 1);
+}
+
+.no-btn {
+  background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.no-btn:hover {
+  background: linear-gradient(135deg, #bdc3c7, #95a5a6);
+}
+
+.hint-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 40px;
+}
+
+/* Celebration Mode */
+.final-proposal.celebration {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+}
+
+.fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.firework {
+  position: absolute;
+  font-size: 3rem;
+  animation: explode 2s ease-out infinite;
+}
+
+@keyframes explode {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2) rotate(360deg);
+  }
+}
+
+.celebration-content {
+  position: relative;
+  z-index: 2;
+}
+
+.celebration-title {
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-family: 'Caveat', cursive;
+  color: white;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  animation: bounceIn 1s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.celebration-text {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: white;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-out 0.5s backwards;
+}
+
+.hearts-explosion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.heart-particle {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatUp 3s ease-out infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px) scale(1.5);
+  }
+}
+
+.valentine-message {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: white;
+  margin-top: 60px;
+  line-height: 1.8;
+  animation: fadeInUp 1s ease-out 1s backwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .yes-btn {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+  }
+  
+  .no-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+  
+  .button-container {
+    min-height: 150px;
+  }
+}
