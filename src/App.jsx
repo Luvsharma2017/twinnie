@@ -170,7 +170,7 @@ function App() {
           <h2 className="section-title fade-in" style={{marginTop: '100px'}}>Now... here's how I see YOU</h2>
           <div className="appreciation-notes">
             <div className="note">
-              <p>"You are the most amazing person I've ever met. Your kindness, your laugh, your way of seeing the world... everything about you is magical."</p>
+              <p>"You are the most amazing person I've ever met. Your kindness and chandalness, your laugh, your way of seeing the world... everything about you is magical."</p>
             </div>
             <div className="note">
               <p>"Thank you for being patient with me, for understanding me, and for choosing to stay even when things got tough."</p>
@@ -239,5 +239,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
