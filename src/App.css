@@ -96,22 +96,6 @@
   }
 }
 
-/* Slow Down Message */
-.slow-down-message {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 107, 157, 0.95);
-  color: white;
-  padding: 30px 50px;
-  border-radius: 20px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  z-index: 10000;
-  animation: popIn 0.3s ease-out;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-}
 
 @keyframes popIn {
   0% { transform: translate(-50%, -50%) scale(0); }
@@ -132,9 +116,15 @@
   color: white;
   text-align: center;
   margin-bottom: 60px;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1; /* Changed from 0 */
+  transform: translateY(0); /* Changed from translateY(30px) */
   transition: all 0.8s ease-out;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-title.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section-title.fade-in {
@@ -393,4 +383,5 @@
   .days-number {
     font-size: 4rem;
   }
+
 }
