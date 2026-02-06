@@ -16,7 +16,10 @@ const FirstFight = () => {
           triggerSequence();
         }
       },
-      { threshold: 0.6 }
+      { 
+        threshold: 0.3, // Changed from 0.6 to work better on laptop
+        rootMargin: '0px 0px -100px 0px'
+      }
     );
 
     const section = document.querySelector('.first-fight');
@@ -95,16 +98,15 @@ const FirstFight = () => {
         <div className="lesson-box">
           <h4>What We Learned:</h4>
           <ul>
-            <li>1.5 foot wala twinnie is always right💬</li>
-            <li>It's okay to bde twinnie pr saara ilzam lga dena🤝</li>
-            <li>Love means "Us Together"💕</li>
-            <li>Daily Ilu Ilu bolege💪</li>
+            <li>1.5 foot wala twinnie is always right 💬</li>
+            <li>It's okay to bde twinnie pr saara ilzam lga dena 🤝</li>
+            <li>Love means "Us Together" 💕</li>
+            <li>Daily Ilu Ilu bolege 💪</li>
           </ul>
         </div>
       </div>
     </section>
   );
 };
-
 
 export default FirstFight;
