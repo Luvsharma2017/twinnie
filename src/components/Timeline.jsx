@@ -13,7 +13,8 @@ const Timeline = ({ scrollProgress }) => {
       emoji: "👋",
       image: "/images/first-meeting.jpg",
       description: "The day everything changed",
-      color: "#ff6b9d"
+      color: "#ff6b9d",
+      detail:"Twinnie group ka toh yaad ni but first time personal m yhi photo bheji thi and i love it a lot💕"
     },
     {
       id: 2,
@@ -23,7 +24,8 @@ const Timeline = ({ scrollProgress }) => {
       emoji: "☕",
       image:"/images/first-date.jpg",
       description: "Yhi hmari first date thi ese hi ek sath thy",
-      color: "#c44569"
+      color: "#c44569",
+      detail:"jb aapne first time hme ek sath joda tha its our date only ek sath hona💕"
     },
     {
       id: 3,
@@ -32,7 +34,8 @@ const Timeline = ({ scrollProgress }) => {
       time: "09:00 AM",
       emoji: "📞",
       description: "when i get to know my twinnie has beautiful voice",
-      color: "#f39c12"
+      color: "#f39c12",
+      detail:"Bache ki awaz'app kon Luv se baat krni thi','m hi hu twinnie','uff'"
     },
     {
       id: 4,
@@ -41,7 +44,8 @@ const Timeline = ({ scrollProgress }) => {
       time: "6:15 PM",
       emoji: "💑",
       description: "By Birth mere hi ho, wtf is 2020 m baat kri",
-      color: "#e74c3c"
+      color: "#e74c3c",
+      detail:"Ilu Ilu toh hmara roj ka h💕"
     }
   ];
 
@@ -105,7 +109,7 @@ const Timeline = ({ scrollProgress }) => {
                 <p className="card-description">{memory.description}</p>
                 {activeCard === memory.id && (
                   <div className="card-detail">
-                    <p>Every moment with you is a treasure I hold close to my heart. 💕</p>
+                    <p>{memory.detail}</p>
                   </div>
                 )}
               </div>
@@ -116,5 +120,6 @@ const Timeline = ({ scrollProgress }) => {
     </section>
   );
 };
+
 
 export default Timeline;
