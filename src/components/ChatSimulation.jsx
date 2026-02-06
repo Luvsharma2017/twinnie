@@ -70,12 +70,12 @@ const ChatSimulation = () => {
     <section className="chat-simulation">
       <div className="container">
         <h2 className="section-title">Where It All Began 💬</h2>
-        <p className="chat-subtitle">Our First Chat — August 16, 2020, 11:47 PM</p>
+        <p className="chat-subtitle">Our First Chat — August 16, 2020, 11:47 AM</p>
         
         <div className="phone-mockup">
           <div className="phone-header">
             <div className="status-bar">
-              <span>11:47 PM</span>
+              <span>11:47 AM</span>
               <div className="signal-icons">
                 <span>📶</span>
                 <span>🔋</span>
@@ -148,4 +148,5 @@ const ChatSimulation = () => {
 
 
 export default ChatSimulation;
+
 
