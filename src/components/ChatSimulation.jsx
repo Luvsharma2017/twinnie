@@ -9,15 +9,15 @@ const ChatSimulation = () => {
   const [hasStarted, setHasStarted] = useState(false);
 
   const conversation = [
-    { sender: 'them', text: 'Hey! 👋', delay: 1000 },
-    { sender: 'me', text: 'Hi! How are you?', delay: 1500 },
-    { sender: 'them', text: 'I\'m good! Just wanted to say hi 😊', delay: 2000 },
-    { sender: 'me', text: 'That made my day ❤️', delay: 1800 },
-    { sender: 'them', text: 'Really? 🥺', delay: 1200 },
-    { sender: 'me', text: 'Yeah... I really like talking to you', delay: 2200 },
-    { sender: 'them', text: 'Me too... like, a lot 💕', delay: 2000 },
-    { sender: 'me', text: 'So... what are we doing here? 😅', delay: 1800 },
-    { sender: 'them', text: 'I don\'t know... but I don\'t want to stop', delay: 2500 },
+    { sender: 'them', text: 'Hi twinnie 👋', delay: 1000 },
+    { sender: 'me', text: 'Hi twinnie kese ho aap?', delay: 1500 },
+    { sender: 'them', text: 'I m good, i cant tell how happy i am after finding you 😊', delay: 2000 },
+    { sender: 'me', text: 'me too, its rare to find Luv ❤️', delay: 1800 },
+    { sender: 'them', text: 'Really, i m so happy🥺', delay: 1200 },
+    { sender: 'me', text: 'm bhi, bhot jayda', delay: 2200 },
+    { sender: 'them', text: 'twinnie photu do apna💕', delay: 2000 },
+    { sender: 'me', text: 'aap do phle 😅', delay: 1800 },
+    { sender: 'them', text: 'niche scroll kro mil jaege💕', delay: 2500 },
   ];
 
   useEffect(() => {
@@ -145,5 +145,6 @@ const ChatSimulation = () => {
     </section>
   );
 };
+
 
 export default ChatSimulation;
