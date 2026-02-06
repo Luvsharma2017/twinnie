@@ -67,13 +67,13 @@ const FirstFight = () => {
               <p>"I thought you understood..."</p>
             </div>
             <div className="fight-message sad">
-              <p>"Maybe we were wrong about this..."</p>
+              <p>"Kya understood, aap bdo ho ki m?"</p>
             </div>
             <div className="fight-message regret">
-              <p>"I'm sorry... I didn't mean it that way."</p>
+              <p>"chota kon h"</p>
             </div>
             <div className="fight-message hope">
-              <p>"Can we talk about this?"</p>
+              <p>"aap bde ho mtlb aap galat ho"</p>
             </div>
           </div>
           
@@ -95,15 +95,16 @@ const FirstFight = () => {
         <div className="lesson-box">
           <h4>What We Learned:</h4>
           <ul>
-            <li>Communication is everything 💬</li>
-            <li>It's okay to disagree 🤝</li>
-            <li>Love means choosing each other, even when it's hard 💕</li>
-            <li>Every fight made us stronger 💪</li>
+            <li>1.5 foot wala twinnie is always right💬</li>
+            <li>It's okay to bde twinnie pr saara ilzam lga dena🤝</li>
+            <li>Love means "Us Together"💕</li>
+            <li>Daily Ilu Ilu bolege💪</li>
           </ul>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default FirstFight;
